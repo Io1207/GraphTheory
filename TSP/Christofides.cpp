@@ -214,12 +214,7 @@ pair<double, vector<int>> tsp(const vector<pair<int, int>>& data) {
 }
 
 int main() {
-    vector<pair<int, int>> data = [
-        {1380, 939}, {2848, 96}, {3510, 1671}, {457, 334}, {3888, 666},
-        {984, 965}, {2721, 1482}, {1286, 525}, {2716, 1432}, {738, 1325},
-        // more points can be added
-    ];
-
+    vector<pair<int, int>> data = {{1380, 939}, {2848, 96}, {3510, 1671}, {457, 334}, {3888, 666},{984, 965}, {2721, 1482}, {1286, 525}, {2716, 1432}, {738, 1325}};// more points can be added
     auto [length, path] = tsp(data);
     cout << "Path length: " << length << endl;
     cout << "TSP path: ";
